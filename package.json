@@ -17,12 +17,16 @@
   "author": "aaogoltcov",
   "license": "MIT",
   "scripts": {
-    "start": "webpack serve --open --config webpack.dev.js",
+    "prestart": "yarn install",
+    "start": "forever ./src/js/server.js",
+    "watch": "forever -w ./src/js/server.js",
+    "start_webpack": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "startF": "forever ./src/js/server.js",
-    "watchF": "forever -w ./src/js/server.js",
     "test": "jest --coverage",
     "show:dist": "live-server dist"
+  },
+  "engines": {
+    "node": "11.x"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
