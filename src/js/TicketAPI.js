@@ -5,7 +5,7 @@ export default class TicketAPI {
   constructor() {
     this.form = document.querySelector('[data-widget=ticket_form]');
     this.list = document.querySelector('[data-widget=ticket_list]');
-    this.url = 'http://localhost:7070';
+    this.url = 'http://0.0.0.0:5000';
     this.xhr = new XMLHttpRequest();
   }
 
