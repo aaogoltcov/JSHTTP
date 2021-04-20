@@ -17,7 +17,7 @@
   "author": "aaogoltcov",
   "license": "MIT",
   "scripts": {
-    "prestart": "yarn install",
+    "prestart": "npm install",
     "start": "forever ./src/js/server.js",
     "watch": "forever -w ./src/js/server.js",
     "start_webpack": "webpack serve --open --config webpack.dev.js",
