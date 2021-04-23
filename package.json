@@ -1,8 +1,8 @@
 {
   "scripts": {
     "frontend": "cd frontend && yarn start",
-    "backend": "cd backend && yarn watcj",
-    "dev": "concurrently --kill-others-on-fail \"yarn run backend\" \"yarn run frontend\"",
-    "heroku-postbuild": "cd frontend && yarn install && yarn run build"
+    "backend": "cd backend && yarn watch",
+    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
   }
 }
