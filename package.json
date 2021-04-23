@@ -11,8 +11,10 @@
     "heroku-postbuild": "yarn frontend",
     "heroku-cleanup": "yarn backend"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "yarn": "^1.22.10",
-    "node": "12.x"
   }
 }
