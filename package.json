@@ -1,4 +1,10 @@
 {
+  "name": "JSHTTP",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aaogoltcov/JSHTTP.git",
+  "author": "aaogoltcov",
+  "license": "MIT",
   "scripts": {
     "frontend": "cd frontend && yarn install && yarn build",
     "backend": "cd backend && yarn prestart && yarn start",
