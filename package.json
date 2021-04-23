@@ -9,7 +9,7 @@
     "backend": "cd backend && yarn install && yarn start",
     "frontend": "cd frontend && yarn install && yarn build",
     "prestart":"yarn install",
-    "start":"backend",
+    "start":"yarn backend",
     "heroku-cleanup": "yarn frontend"
   },
   "engines": {
