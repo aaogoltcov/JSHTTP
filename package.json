@@ -8,8 +8,9 @@
   "scripts": {
     "backend": "cd backend && yarn install && yarn start",
     "frontend": "cd frontend && yarn install && yarn build",
-    "heroku-postbuild": "yarn frontend",
-    "heroku-cleanup": "yarn backend"
+    "prestart":"yarn install",
+    "start":"backend",
+    "heroku-cleanup": "yarn frontend"
   },
   "engines": {
     "node": "12.x"
