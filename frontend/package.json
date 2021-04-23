@@ -21,6 +21,9 @@
     "test": "./node_modules/.bin/jest --coverage",
     "show:dist": "./node_modules/.bin/live-server dist"
   },
+  "engines": {
+    "node": "12.x"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/preset-env": "^7.12.10",
