@@ -6,9 +6,10 @@
   "author": "aaogoltcov",
   "license": "MIT",
   "scripts": {
-    "frontend": "cd frontend && yarn install && yarn build",
+    "frontend": "cd frontend && yarn install && yarn start",
     "backend": "cd backend && yarn prestart && yarn start",
-    "heroku-postbuild": "npm add yarn && yarn backend && yarn frontend"
+    "dev": "concurrently --kill-others-on-fail \"yarn backend\" \"yarn frontend\"",
+    "heroku-postbuild": "yarn frontend && yarn install && yarn build"
   },
   "dependencies": {
     "yarn": "^1.22.10"
