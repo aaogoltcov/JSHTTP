@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@jest/globals": "^26.6.2",
+    "core-js": "^3.8.1",
+    "forever": "^3.0.4",
+    "http": "^0.0.1-security",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "uuid": "^8.3.2",
+    "yarn": "^1.22.10"
+  },
+  "name": "JSHTTP_BE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "aaogoltcov",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "yarn install",
+    "start": "forever server.js",
+    "watch": "forever server.js"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
