@@ -8,7 +8,7 @@
   "scripts": {
     "backend": "cd backend && yarn prestart && yarn start",
     "frontend": "cd frontend && yarn install && yarn build",
-    "heroku_prebuild": "yarn backend",
+    "heroku-prebuild": "yarn backend",
     "heroku-postbuild": "yarn frontend"
   },
   "dependencies": {
