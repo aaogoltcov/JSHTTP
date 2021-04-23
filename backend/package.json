@@ -19,8 +19,5 @@
     "prestart": "yarn install",
     "start": "forever server.js",
     "watch": "forever -w server.js"
-  },
-  "engines": {
-    "node": "14.x"
   }
 }

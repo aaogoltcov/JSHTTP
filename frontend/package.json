@@ -17,9 +17,9 @@
   "license": "MIT",
   "scripts": {
     "prestart": "yarn install",
-    "start": "../node_modules/.bin/webpack serve --open --config webpack.dev.js",
-    "build": "../node_modules/.bin/webpack --config webpack.prod.js",
-    "test": "../node_modules/.bin/jest --coverage",
+    "start": "./node_modules/.bin/webpack serve --open --config webpack.dev.js",
+    "build": "./node_modules/.bin/webpack --config webpack.prod.js",
+    "test": "./node_modules/.bin/jest --coverage",
     "show:dist": "../node_modules/.bin/live-server dist"
   },
   "devDependencies": {
