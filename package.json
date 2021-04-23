@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "frontend": "cd frontend && npm start",
-    "backend": "cd backend && npm prestart",
-    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
-    "heroku-postbuild": "cd frontend && npm install && npm run build"
+    "frontend": "cd frontend && npm install && npm build",
+    "backend": "cd backend && npm prestart && npm start"
   }
 }

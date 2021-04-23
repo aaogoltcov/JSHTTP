@@ -1,14 +1,12 @@
 {
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
     "@jest/globals": "^26.6.2",
     "core-js": "^3.8.1",
     "forever": "^3.0.4",
     "http": "^0.0.1-security",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
-    "uuid": "^8.3.2",
-    "yarn": "^1.22.10"
+    "uuid": "^8.3.2"
   },
   "name": "JSHTTP_FE",
   "version": "1.0.0",
@@ -17,6 +15,7 @@
   "author": "aaogoltcov",
   "license": "MIT",
   "scripts": {
+    "prestart": "npm install",
     "start": "../node_modules/.bin/webpack serve --open --config webpack.dev.js",
     "build": "../node_modules/.bin/webpack --config webpack.prod.js",
     "test": "../node_modules/.bin/jest --coverage",

@@ -7,8 +7,7 @@
     "http": "^0.0.1-security",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
-    "uuid": "^8.3.2",
-    "yarn": "^1.22.10"
+    "uuid": "^8.3.2"
   },
   "name": "JSHTTP_BE",
   "version": "1.0.0",
@@ -16,7 +15,7 @@
   "author": "aaogoltcov",
   "license": "MIT",
   "scripts": {
-    "prestart": "yarn install",
+    "prestart": "npm install",
     "start": "forever server.js",
     "watch": "forever -w server.js"
   },
