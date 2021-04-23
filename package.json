@@ -6,7 +6,9 @@
   "author": "aaogoltcov",
   "license": "MIT",
   "scripts": {
-    "heroku-cleanup": "cd frontend && yarn install && yarn start --dev"
+    "frontend": "cd frontend && yarn install && yarn start",
+    "backend": "cd backend && yarn install && yarn start",
+    "heroku-cleanup": "yarn backend"
   },
   "engines": {
     "node": "12.x"
