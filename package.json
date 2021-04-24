@@ -19,7 +19,12 @@
     "start": "./node_modules/.bin/webpack serve --open --config webpack.dev.js",
     "build": "./node_modules/.bin/webpack --config webpack.prod.js",
     "test": "./node_modules/.bin/jest --coverage",
-    "show:dist": "./node_modules/.bin/live-server dist"
+    "show:dist": "./node_modules/.bin/live-server dist",
+    "prestart": "yarn install",
+    "start_forever": "forever server.js",
+    "watch_forever": "forever -w server.js",
+    "backend": "yarn prestart && yarn start_forever",
+    "heroku-cleanup": "yarn backend"
   },
   "engines": {
     "node": "12.x"

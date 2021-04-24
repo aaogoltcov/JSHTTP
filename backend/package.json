@@ -17,8 +17,8 @@
   "license": "MIT",
   "scripts": {
     "prestart": "yarn install",
-    "start": "forever server.js",
-    "watch": "forever -w server.js"
+    "start": "forever ../server.js",
+    "watch": "forever -w ../server.js"
   },
   "engines": {
     "node": "12.x"
